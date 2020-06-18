@@ -1,0 +1,2 @@
+# Комментарии
+print("Hello, world!")
