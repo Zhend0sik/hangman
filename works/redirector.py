@@ -15,7 +15,7 @@ def start(message):
     if len(sys.argv) != 1:
         return
     bot.send_message(message.chat.id, "ID чата: " + str(message.chat.id))
-    print message.chat.id
+    print(message.chat.id)
     sys.exit()
 
 
