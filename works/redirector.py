@@ -4,8 +4,8 @@
 import telebot
 import sys
 
-token = 'INSERT_YOUR_TOKEN'  # Вводим свой телеграм API токен
-group_id = -123456789  # Вводим id группы, куда надо слать сообщения (обратите внимание, что id группы - отрицательное целое число)
+token = '1166081834:AAEd4OVoJmRKSPJ4cBBpxb2sk4nBPMXpWlY'  # Вводим свой телеграм API токен
+group_id = -1001184252611  # Вводим id группы, куда надо слать сообщения (обратите внимание, что id группы - отрицательное целое число)
 bot = telebot.TeleBot(token, skip_pending=True)
 
 
@@ -15,7 +15,7 @@ def start(message):
     if len(sys.argv) != 1:
         return
     bot.send_message(message.chat.id, "ID чата: " + str(message.chat.id))
-    print(message.chat.id)
+    print message.chat.id
     sys.exit()
 
 
@@ -24,7 +24,7 @@ if len(sys.argv) == 4:
     callerid = str(sys.argv[1])
     exten = str(sys.argv[2])
     redirectnum = str(sys.argv[3])
-    bot.send_message(group_id, "Вызов с номера " + callerid + "\nна номер " + exten + "\nпереадресован на номер " + redirectnum)
+    bot.send_message(group_id, "Вызов с номера " + callerid)
 # Если аргумента нет, то считаем первым стартом и запускаем в режиме полинга
 if len(sys.argv) == 1:
     bot.polling(none_stop=True)
