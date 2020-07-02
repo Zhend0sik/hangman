@@ -1,7 +1,7 @@
 {
    "python.pythonPath": "C:\\Users\\sysadmin\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
    "python.testing.pytestArgs": [
-      "python_ex"
+      "pyTelegramBotAPI"
    ],
    "python.testing.unittestEnabled": false,
    "python.testing.nosetestsEnabled": false,
